@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="main-html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Kickboxing Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1 id="title">Jordan Kickboxing Academy</h1>
+            <button onclick="toggleLanguage()" id="lang-btn">العربية</button>
+        </header>
+
+        <section id="setup-form">
+            <h2 id="form-head">Create Your Training Profile</h2>
+            <input type="number" id="age" placeholder="Enter Age">
+            
+            <select id="belt-level">
+                <option value="white">White Belt (Beginner)</option>
+                <option value="yellow">Yellow Belt</option>
+                <option value="orange">Orange Belt</option>
+                <option value="green">Green Belt</option>
+                <option value="blue">Blue Belt</option>
+                <option value="brown">Brown Belt</option>
+                <option value="dan1">Black Belt - 1st Dan</option>
+                <option value="dan2">Black Belt - 2nd Dan</option>
+                <option value="dan3">Black Belt - 3rd Dan</option>
+                <option value="dan4">Black Belt - 4th Dan</option>
+                <option value="dan5">Black Belt - 5th Dan</option>
+                <option value="dan6">Black Belt - 6th Dan (Master)</option>
+                <option value="dan7">Black Belt - 7th Dan</option>
+                <option value="dan8">Black Belt - 8th Dan</option>
+                <option value="dan9">Black Belt - 9th Dan (Grandmaster)</option>
+            </select>
+
+            <select id="fitness">
+                <option value="low">Fitness: Low (Just starting)</option>
+                <option value="med">Fitness: Medium (Active)</option>
+                <option value="high">Fitness: High (Athlete)</option>
+            </select>
+
+            <button onclick="generatePlan()" id="generate-btn">Generate My Plan</button>
+        </section>
+
+        <section id="plan-display" style="display:none;"></section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
